@@ -18,6 +18,17 @@ def get_student():
         "section": "B"
     })
 
+
+@app.route('/course')
+def get_course():
+    return jsonify({
+        "course": "Bachelor of Science in Information Technology",
+        "program": "BSIT",
+        "year": 3,
+        "section": "B"
+    })
+
+
 @app.route('/skills')
 def get_skills():
     return jsonify({
